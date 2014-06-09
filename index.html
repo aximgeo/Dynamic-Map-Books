@@ -1,79 +1,224 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Dynamic-map-books : Notes For A Proposed Esri Lightning Talk @ UC" />
+	<head>
+		<meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<title>reveal.js - The HTML Presentation Framework</title>
 
-    <title>Dynamic-map-books</title>
-  </head>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-  <body>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jonahadkins/Dynamic-Map-Books">View on GitHub</a>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-          <h1 id="project_title">Dynamic-map-books</h1>
-          <h2 id="project_tagline">Notes For A Proposed Esri Lightning Talk @ UC</h2>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/gisinc.css" id="theme">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jonahadkins/Dynamic-Map-Books/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jonahadkins/Dynamic-Map-Books/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+	<body>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<div class="reveal">
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section>
+          <h1>
+            <span>Dynamic Map Books</span><br>
+          </h1>
+          <h2>
+          <div>or I got <strong>99</strong> branches and a mapbook is one</div></h2>
+          <br/>
+          <br/>
+          <p>
+        <a href="http://www.gisinc.com">Jonah Adkins || Sr. Geospatial Analyst || GISi</a> <p>
+            <a href="http://twitter.com/jonahadkins">@JonahAdkins</a>  
+        </section>
+        <section>
+          <h1>What is <a href="http://bit.ly/1mNu0Zu">NSGEM</a>?</h1>
+          <h3><strong>NAVY Shore Geospatial Energy Module</strong></h3>
+        </section>
+          <section>
+          <h3>Integrated With Existing NAVY Capabilities</h3>
+            <img height="500px" src="./img/GRX.png"/>
+        </section>
+        <section>
+          <h3>Integrated With Existing NAVY Capabilities</h3>
+            <img height="500px" src="./img/NSGEM.png"/>
+        </section>
+        <section>
+          <h3>2014 Special Achievment In GIS Winner!</h3>
+            <img height="600px" src="./img/meryl.gif"/>
+        </section>
+      <section>
+        <div><div style="width:400px;float:left;display:inline-block;">
+        <h2><strong>Map Book</strong></h2>
+        <h2><strong>Checklist</strong></h2>
+        <h3></br>
+        <div>Lots of information to visualize</div></br>
+        <div>Short Development Time</div></br>
+        <div>Maps and <u>Charts</u> need to be data driven</div></br>
+        </h3>
+        </div>
+        <div style="margin-left:500px;">
+          <img width="500px" src="./img/charts.gif"/>
+        </div>
+      </div>
+        </section>
+        
+        <section>
+          <h1>Fuzzy Math</h1>
+          <img height="300px" src="./img/pythin2.png"/>
+      
+        </section>
+        
+        <section>
+          <img height="1000px" src="./img/OMB_1.png"/>
+        </section>
+      
+      
+      <section>
+       <img height="1000px" src="./img/OMB_2.png"/>
       </section>
-    </div>
+      
+      <section>
+        <img height="1000px" src="./img/done2.gif"/>
+      </section>
+      
+      <section>
+        <img height="1000px" src="./img/robot.gif"/>
+      </section>
+      
+      <section>
+         <h1>Real Talk</h1>
+          <img height="300px" src="./img/pythin.png"/>
+          <div><div style="width:400px;float:left;display:inline-block;">
+        
+      </div>
+        </section>
+      
+      <section>
+        <div><div style="width:300px;float:left;display:inline-block;">
+        <h2><strong>Map Book</strong></h2>
+        <h2><strong>Checklist II</strong></h2>
+        <h3></br>
+        <div>Crystal Reports Visual Studio Runtime</div></br>
+        <div>SQL Selects On The Fly From DB To .NET Dataset</div></br>
+        
+        </h3>
+        </div>
+        <div style="margin-left:500px;">
+          
+          <img width="800px" height="300px" src="./img/digit.gif"/>
+          <h3></br>
+        <div><u>BYTES</u></div>
+        </h3>
+        <h4>
+        <div>Inserting AGS Map Image Via Byte Array Type Field In .NET Dataset</div></br>
+      </h4>
+        </div>
+      </div>
+        </section>
+      
+      <section>
+          <img height="1000px" src="./img/mb1.png"/>
+        </section>
+      
+      
+      <section>
+       <img height="1000px" src="./img/mb3.png"/>
+      </section>
+      
+      <section>
+        <img height="1000px" src="./img/mb2.png"/>
+      </section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Dynamic-map-books maintained by <a href="https://github.com/jonahadkins">jonahadkins</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+       <section>
+        <img height="1000px" src="./img/cool.gif"/>
+      </section>
+   
+      <section>
+        <img height="800px" src="./img/awesome.gif"/>
+        <h3></h3>
+        <h3></h3>
+      </section>
 
-    
+      <section>
+        <div><div style="width:400px;float:left;display:inline-block;">
+        <h2><strong>See Us At Booth 2317</strong></h2>
+        <h2><strong>Attend Our Talk On Thursday, Omni D/E, 3:15pm</strong></h2>
+        <h2><strong>Check Us Out In The Map Gallery</strong></h2>
+        </div>
+        <div style="margin-left:500px;">
+          <img width="300px" src="./img/se.jpg"/>
+          <img width="300px" src="./img/norfolk.jpg"/>
+          <img width="300px" src="./img/world.png"/>
+          <h3></br>
+        </div>
+      </div>
+       
+      </section>
 
-  </body>
+			</div>
+      
+      <div class="top-bar"> &nbsp;	</div>
+      <a class="logo" href="http://gisinc.com/" title="Geographic Information Services, Inc."> &nbsp; </a>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+        fragments: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
